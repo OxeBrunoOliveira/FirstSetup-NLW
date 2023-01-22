@@ -1,0 +1,13 @@
+* { /* Seleciona todos os elementos da página que contem HTML */
+  margin: 0; /* Retirou os espaços da margem da página */
+}
+
+body { /* Edita tudo dentro do body de uma vez*/
+  background-color: #1E1E1E; /* Editar a cor de fundo */
+  color: white;
+  
+  display: grid; /* Visualização */
+  place-items: center; /* Centralizar tudo ao meio da tela*/
+
+  height: 100vh; /* Altura do body */
+}

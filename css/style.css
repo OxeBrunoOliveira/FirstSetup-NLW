@@ -1,0 +1,123 @@
+* { /* Seleciona todos os elementos da página que contem HTML */
+  margin: 0; /* Retirou os espaços da margem da página */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { /* Edita tudo dentro do body de uma vez*/
+  background-color: #1E1E1E; /* Editar a cor de fundo */
+  color: white;
+
+  height: 100vh; /* Altura do body */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Elementos nas estremidades da pagina */
+
+  padding: 48px;
+
+  position: fixed; /* deixa o cabecalho fixado */
+  width: 100%; /* Largura do cabecalho*/
+  background-color: #1E1E1E;
+
+} 
+
+button {
+  padding: 16px 24px; /* As laterais do botao */
+  border-radius: 8px; 
+  border: 1px solid #b85cf6; /* Cor da borda */
+  background-color: transparent; /* Cor de fundo do botao */
+  color: white; /* Com do testo do botap */
+
+  display: flex;
+  /*Essas opcoes abaixo so existem quando tem a opcao flex */ 
+  align-items: center;
+  gap: 12px; /* Espacos entre elementos*/
+
+  font-family: 'Inter';
+  font-weight: 600; /* Peso da fonte */
+  font-size: 16px; /* Tamanho da fonte */
+  line-height: 125%; /* Altura da linha*/
+}
+
+#form-habits {
+  display: flex;
+
+  padding: 182px 48px 48px; /* Espacos entra as margem, em cima, dos lados*/ 
+  width: fit-content;  /* Encaixar o conteudo na largura da tela*/
+}
+
+.habits {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/*pega toda a diva data da classe day*/
+.day div {
+  margin-bottom: 8px;
+
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  line-height: 125%;
+
+  color: #a1a1aa;
+
+  text-align: center;
+
+}
+
+input {
+  /*Tirar a aparencia*/ 
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 64px; /*Largura*/ 
+  height: 64px; /* ALtura */ 
+
+  border: 2px solid #27272a;
+  border-radius: 8px; 
+
+  background: #181818;
+}
+
+/* Pseudo selector */
+input:checked {
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
+
+/*Retira a palvra do botao quando a tela for menor que 640 px*/
+@media (max-width: 640px) {
+  button div {
+    display: none;
+  }
+}
